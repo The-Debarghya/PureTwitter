@@ -1,0 +1,24 @@
+{
+  "name": "PureTwitter",
+  "version": "1.0.0",
+  "description": "Remove profile pics and names to get only content.",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    },
+    "default_title": "PureTwitter"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "https://twitter.com/home"
+      ]
+    }
+  ]
+}
